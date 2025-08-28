@@ -89,7 +89,7 @@ function App() {
       {
         !valueSi ? (
           <div className="p-5">
-            <h1 className="text-white font-bold text-5xl text-center">¿Quieres ser mi San Valentin?</h1>
+            <h1 className="text-white font-bold text-5xl text-center">¿Quieres ser mi cita?</h1>
             <img src={Object.keys(randomValor).length === 0 ?
               "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif" : randomValor.img} alt="San Valentin" className="mx-auto" width={400} height={400} />
             <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 items-center">
@@ -111,7 +111,7 @@ function App() {
                 disabled={imagenCargada} // Deshabilita el botón si la imagen no se ha cargado
               >
                 {Object.keys(randomValor).length === 0 ? "No" : randomValor.description}
-                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "¿Quieres ser mi San Valentin?" : randomValor.description}</span>
+                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "¿Quieres ser mi cita?" : randomValor.description}</span>
               </button>
             </div>
           </div>
